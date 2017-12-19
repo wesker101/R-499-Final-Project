@@ -1,0 +1,15 @@
+%\VignetteIndexEntry{A Tutorial geneplot}
+\documentclass{article}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+This function generates a heatmap from gene expression data to the plot window. Simply run it on a .csv file and the data will be imported and plotted to a heatmap. 
+
+<<>>=
+geneplot("CPSC499genetable.csv")
+@
+
+
+
+\end{document}

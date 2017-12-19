@@ -1,0 +1,13 @@
+Package: GeneExpHeatmap
+Version: 0.0
+Date: 2017-12-18
+Title: Heatmap Generation and Export for Gene Expression Data
+Authors@R: person("Brian", role = c("aut", "cre"),
+                  email = "d1334f1a@opayq.com")
+Author: Brian  [aut, cre]
+Maintainer: Brian <d1334f1a@opayq.com>
+Description: This package includes functions to generate and
+export a heatmap from gene expression data.
+Url: https://github.com/wesker101/R-499-Final-Project
+License: GPL-3
+Imports: "ggplot2", "RColorBrewer"
