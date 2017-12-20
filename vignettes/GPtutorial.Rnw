@@ -7,6 +7,17 @@
 This function generates a heatmap from gene expression data to the plot window. Simply run it on a .csv file and the data will be imported and plotted to a heatmap. 
 
 <<>>=
+geneplot <- function(data.frame){
+genetable <- read.csv("CPSC499genetable.csv",
+                      row.names = 1,
+                      stringsAsFactors = FALSE,
+                      sep= ",")
+    tabmat <- data.matrix(genetable)
+    heatmap.2(tabmat, Rowv=NA, Colv=NA, 
+          col = heat.colors(256), 
+          scale="column", margins=c(5,10),
+          xlab = "Gene", 
+          ylab = "Specimen")}
 geneplot("CPSC499genetable.csv")
 @
 
